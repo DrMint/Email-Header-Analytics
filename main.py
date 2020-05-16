@@ -38,7 +38,7 @@ search.addSender('anAdress@site.com')
 search.addSender('another@site.com')
 search.addCriteria(Criteria('The mails have to include at least one of those', True))
 search.addCriteria(Criteria('Another one', True))
-search.addCriteria(Criteria('Negative ones are mandatory, the value MUST not be there', True))
+search.addCriteria(Criteria('Negative ones are mandatory, the value MUST not be there', False))
 listSearch += [search]
 
 # Performs all the queries to get the appropriate emails's headers
